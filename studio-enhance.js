@@ -69,7 +69,7 @@
     document.getElementById('from').addEventListener('change', renderVisual);
     document.getElementById('to').addEventListener('change', renderVisual);
   } else {
-    for (const id of ('stat-characters', 'stat-reading')) {
+    for (const id of ['stat-characters', 'stat-reading']) {
       visualObserver.observe(document.getElementById(id), {childList:true, characterData:true, subtree:true});
     }
   }
